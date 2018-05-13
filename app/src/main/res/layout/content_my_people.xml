@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nsv_people_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.toanpv.xmldesign.PeopleDetailActivity"
+    tools:showIn="@layout/activity_people_detail">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/content_padding_normal">
+
+        <!--<ListView android:id="@+id/people_list"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+        <!--</ListView>-->
+
+        <!--<ScrollView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+
+        <ListView android:id="@+id/people_list"
+            android:layout_width="match_parent"
+            android:layout_height="500dp">
+        </ListView>
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:onClick="onClickPeople"-->
+                <!--android:orientation="vertical">-->
+
+                <!--<include layout="@layout/item_my_people" />-->
+
+                <!--<include layout="@layout/item_my_people" />-->
+
+                <!--<include layout="@layout/item_my_people" />-->
+
+                <!--<include layout="@layout/item_my_people" />-->
+
+                <!--<include layout="@layout/item_my_people" />-->
+
+            <!--</LinearLayout>-->
+        <!--</ScrollView>-->
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:background="?android:selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            tools:text="Yaroslav Shevchuk"
+            android:textSize="16sp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="6dp"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="+38094858841"
+            android:textColor="@color/text_secondary"/>
+    </LinearLayout>
+
+
+    <CheckBox
+        android:id="@+id/box"
+        android:layout_gravity="center_vertical"
+        android:layout_width="wrap_content"
+        android:clickable="false"
+        android:layout_marginRight="12dp"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

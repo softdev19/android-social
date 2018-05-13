@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="6dp"
+    android:paddingBottom="6dp"
+    android:minHeight="72dp"
+    android:orientation="horizontal">
+
+    <Space
+        android:layout_width="16dp"
+        android:layout_height="wrap_content"/>
+
+    <com.intrix.social.common.view.STextView
+        android:id="@+id/event_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/events_grey"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:text="26th Dec"/>
+
+    <Space
+        android:layout_width="18dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:text="RHL @ Church Street"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:src="@drawable/ic_access_time_white_24dp"
+                android:tint="@color/events_grey"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="7.00 pm"
+                android:textColor="@color/events_grey"/>
+
+            <Space
+                android:layout_width="6dp"
+                android:layout_height="wrap_content"/>
+
+            <com.mikepenz.materialdrawer.view.BezelImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_perm_contact_calendar_white_24dp"
+                android:tint="@color/events_grey"
+                app:biv_maskDrawable="@drawable/circle_mask"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/tickets_remaining"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="@string/tickets_remaining"
+                android:textColor="@color/events_grey"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

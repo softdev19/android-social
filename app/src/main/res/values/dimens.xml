@@ -1,0 +1,56 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="startup_edittext_width">200dp</dimen>
+    <dimen name="startup_edittext_height">30dp</dimen>
+    <dimen name="startup_edittext_text">12sp</dimen>
+    <dimen name="starup_eyeball">30dp</dimen>
+    <dimen name="startup_title_text">60sp</dimen>
+    <dimen name="startup_small_text">20sp</dimen>
+    <dimen name="startup_micro_text">10sp</dimen>
+    <dimen name="startup_circle_btn">60dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="chat_image_side_margin">8dp</dimen>
+    <dimen name="chat_message_side_padding">8dp</dimen>
+    <dimen name="chat_message_other_side_padding">16dp</dimen>
+    <dimen name="chat_head_size">36dp</dimen>
+
+    <dimen name="image_top_height">120dp</dimen>
+    <dimen name="image_top_reduced">100dp</dimen>
+    <dimen name="image_top_extended">160dp</dimen>
+    <dimen name="transaction_image_top_height">160dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+
+
+    <dimen name="element_padding_normal">4dp</dimen>
+    <dimen name="element_spacing_normal">8dp</dimen>
+    <dimen name="content_padding_normal">16dp</dimen>
+    <dimen name="content_padding_cycle">32dp</dimen>
+    <dimen name="content_padding_tri">46dp</dimen>
+
+    <dimen name="text_small">10sp</dimen>
+    <dimen name="text_medium">12sp</dimen>
+    <dimen name="text_medium_1">14sp</dimen>
+    <dimen name="text_medium_2">16sp</dimen>
+    <dimen name="text_large">18sp</dimen>
+    <dimen name="text_large_1">24sp</dimen>
+    <dimen name="text_large_2">32sp</dimen>
+    <dimen name="text_large_3">48sp</dimen>
+
+    <dimen name="app_bar_height">280dp</dimen>
+    <dimen name="avatar_list_size">40dp</dimen>
+    <dimen name="list_item_min_height">72dp</dimen>
+
+    <dimen name="payment_side">16dp</dimen>
+    <dimen name="banks_spacing">26dp</dimen>
+    <dimen name="feeback_text_size">25sp</dimen>
+    <dimen name="feedback_stars_top_margin">20dp</dimen>
+
+    <dimen name="talent_grid">40dp</dimen>
+    <dimen name="talent_grid_pad">10dp</dimen>
+
+    <dimen name="workspace_side_margin">50dp</dimen>
+
+</resources>

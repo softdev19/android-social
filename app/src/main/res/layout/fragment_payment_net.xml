@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <TableRow android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hdfc"
+                    app:fab_colorNormal="@android:color/white"
+                    app:fab_colorPressed="#eef7f7f7"/>
+
+                <com.intrix.social.common.view.STextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="HDFC"
+                    android:textColor="@color/payment_text"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/banks_spacing"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/icici"
+                    app:fab_colorNormal="@android:color/white"
+                    app:fab_colorPressed="#eef7f7f7"/>
+
+                <com.intrix.social.common.view.STextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="ICICI"
+                    android:textColor="@color/payment_text"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/banks_spacing"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/citibank"
+                    app:fab_colorNormal="@android:color/white"
+                    app:fab_colorPressed="#eef7f7f7"/>
+
+                <com.intrix.social.common.view.STextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Citi"
+                    android:textColor="@color/payment_text"/>
+            </LinearLayout>
+        </TableRow>
+
+        <TableRow
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/axis"
+                    app:fab_colorNormal="@android:color/white"
+                    app:fab_colorPressed="#eef7f7f7"/>
+
+                <com.intrix.social.common.view.STextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Axis"
+                    android:textColor="@color/payment_text"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/banks_spacing"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sbi"
+                    app:fab_colorNormal="@android:color/white"
+                    app:fab_colorPressed="#eef7f7f7"/>
+
+                <com.intrix.social.common.view.STextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="SBI"
+                    android:textColor="@color/payment_text"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="@dimen/banks_spacing"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.github.clans.fab.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/canara"
+                    app:fab_colorNormal="@android:color/white"
+                    app:fab_colorPressed="#eef7f7f7"/>
+
+                <com.intrix.social.common.view.STextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Canara"
+                    android:textColor="@color/payment_text"/>
+            </LinearLayout>
+        </TableRow>
+    </TableLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"/>
+
+    <Spinner
+        android:id="@+id/other_banks"
+        android:background="@null"
+        android:layout_width="156dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"/>
+
+
+</LinearLayout>

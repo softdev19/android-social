@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/s_orange"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"/>
+
+    <com.intrix.social.common.view.STextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/later"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+
+    <com.intrix.social.common.view.DotBarView
+        android:id="@+id/dot_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <TableRow
+            android:gravity="center_vertical">
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="@string/seating_preferences"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_preferences"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@null"/>
+        </TableRow>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"/>
+
+        <TableRow
+            android:gravity="center_vertical">
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="9"
+                android:text="@string/arrival_time"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+            <Spinner
+                android:id="@+id/spinner_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:background="@null"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"/>
+
+    <com.intrix.social.common.view.SBtnView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@drawable/btn_white_stroke"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="@string/add_to_guest_list"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+
+</LinearLayout>

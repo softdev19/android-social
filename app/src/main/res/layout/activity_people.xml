@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_people_full"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/people_full" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_40" />
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <com.intrix.social.common.view.STextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large_1" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.7"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/content_padding_cycle">
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/tv_name_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deepika"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large_3" />
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/tv_city_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_location_on_white_24dp"
+                android:drawablePadding="@dimen/element_padding_normal"
+                android:gravity="bottom"
+                android:paddingTop="@dimen/content_padding_normal"
+                android:text="Location not updated"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_medium" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:paddingBottom="@dimen/content_padding_cycle"
+            android:paddingLeft="@dimen/content_padding_cycle">
+
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/tv_tag_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="#Acting #Dancing #Star"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large_1" />
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/tv_interest_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tag_people"
+                android:layout_marginTop="@dimen/element_spacing_normal"
+                android:text="Interest: Acting Dancing Star"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_medium_1" />
+
+            <!--<com.intrix.social.common.view.STextView-->
+                <!--android:id="@+id/tv_location_people"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/tv_interest_people"-->
+                <!--android:text="Location: Bangalore"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="@dimen/text_medium_1" />-->
+
+
+            <!--<com.intrix.social.common.view.STextView-->
+                <!--android:id="@+id/tv_jennifer_lover_people"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/tv_location_people"-->
+                <!--android:text="Jennifer lover: Tristan Wilds"-->
+                <!--android:textColor="@android:color/white"-->
+                <!--android:textSize="@dimen/text_medium_1" />-->
+
+            <com.intrix.social.common.view.SBtnView
+                android:id="@+id/btn_get_stated"
+                style="?borderlessButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="@drawable/btn_orange_bg"
+                android:onClick="onClickGetStarted"
+                android:paddingBottom="@dimen/element_padding_normal"
+                android:paddingLeft="@dimen/content_padding_cycle"
+                android:paddingRight="@dimen/content_padding_cycle"
+                android:paddingTop="@dimen/element_padding_normal"
+                android:text="#Connect"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large" />
+
+            <!--<ImageView-->
+                <!--android:id="@+id/btn_twitter_people"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:onClick="onClickSocial"-->
+                <!--android:src="@drawable/ic_twitter_white" />-->
+
+
+            <!--<ImageView-->
+                <!--android:id="@+id/btn_facebook_people"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentBottom="true"-->
+                <!--android:layout_marginLeft="@dimen/content_padding_normal"-->
+                <!--android:layout_toRightOf="@id/btn_twitter_people"-->
+                <!--android:onClick="onClickSocial"-->
+                <!--android:src="@drawable/ic_facebook_white" />-->
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/lib/com.viewpagerindicator"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_intro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.intrix.social.common.view.STextView
+        android:id="@+id/tv_title_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/content_padding_normal"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/text_large_3" />
+
+    <com.intrix.social.common.view.STextView
+        android:id="@+id/tv_content_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/content_padding_normal"
+        android:textColor="@color/chat_time_text"
+        android:textSize="@dimen/text_medium_1" />
+
+    <com.viewpagerindicator.CirclePageIndicator
+        android:id="@+id/vpi_intro"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/content_padding_normal"
+        android:layout_marginTop="@dimen/content_padding_normal"
+        app:default_circle_indicator_fill_color="@color/s_orange"
+        app:default_circle_indicator_page_color="@color/text_secondary" />
+
+    <com.intrix.social.common.view.SBtnView
+        style="?borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/content_padding_normal"
+        android:background="@drawable/btn_orange_bg"
+        android:onClick="onClickSkip"
+        android:paddingBottom="@dimen/element_padding_normal"
+        android:paddingLeft="@dimen/content_padding_cycle"
+        android:paddingRight="@dimen/content_padding_cycle"
+        android:paddingTop="@dimen/element_padding_normal"
+        android:text="SKIP"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_large" />
+</LinearLayout>

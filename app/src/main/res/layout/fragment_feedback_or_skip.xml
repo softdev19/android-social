@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="@color/s_orange">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="32dp" />
+
+    <com.intrix.social.common.view.STextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:text="#Good times"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="32dp" />
+
+    <ImageView
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:src="@drawable/chill" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="24dp" />
+
+    <com.intrix.social.common.view.STextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="false"
+        android:gravity="center"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"
+        android:text="#Hope you had a wonderful time at Church Street Social"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="40dp" />
+
+    <com.intrix.social.common.view.SBtnView
+        android:id="@+id/btn_leave_feedback"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:background="@drawable/btn_white_stroke"
+        android:text="Leave a Feedback"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="18dp" />
+
+    <com.intrix.social.common.view.SBtnView
+        android:id="@+id/btn_skip"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:background="@drawable/btn_white_stroke"
+        android:text="Skip"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

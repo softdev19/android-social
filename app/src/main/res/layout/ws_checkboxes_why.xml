@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/WorkspaceCheckBox"
+        android:text="Opportunity to collaborate with people"
+        android:theme="@style/WorkspaceCheckBox"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Conduct meetings with clients"
+        style="@style/WorkspaceCheckBox"
+        android:theme="@style/WorkspaceCheckBox"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="S[o]cialize"
+        style="@style/WorkspaceCheckBox"
+        android:theme="@style/WorkspaceCheckBox"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/WorkspaceCheckBox"
+        android:text="Need your own workspace"
+        android:theme="@style/WorkspaceCheckBox"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Want to conduct workshops/events"
+        style="@style/WorkspaceCheckBox"
+        android:theme="@style/WorkspaceCheckBox"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Showcase your work"
+        style="@style/WorkspaceCheckBox"
+        android:theme="@style/WorkspaceCheckBox"/>
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Co-create with S[o]CIAL"
+        style="@style/WorkspaceCheckBox"
+        android:theme="@style/WorkspaceCheckBox"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="41dp"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:text="Other:"
+            style="@style/WorkspaceCheckBox"
+            android:theme="@style/WorkspaceCheckBox"/>
+
+
+        <com.intrix.social.common.view.SEditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:theme="@style/GreySelectEditText"/>
+
+        <android.support.v4.widget.Space
+            android:layout_width="@dimen/workspace_side_margin"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

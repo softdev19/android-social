@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_outlet"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/table">
+
+
+    <ImageView
+        android:id="@+id/iv_bakimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/arrow" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/linearLayout"
+
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.80" />
+
+        <ImageView
+            android:id="@+id/iv_share"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:layout_alignBottom="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="@drawable/share" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/tv_hotelName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5sp"
+                android:gravity="left"
+                android:text="Church Street Social"
+                android:textColor="#FFFFFF"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:gravity="left"
+                android:text="" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.intrix.social.common.view.STextView
+
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_gravity="left"
+                    android:layout_weight="0.5"
+
+                    android:gravity="left|center"
+                    android:text="RATING"
+
+                    android:textColor="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/ic_beenhere_white_24dp" />
+
+                    <com.intrix.social.common.view.STextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:gravity="center|right"
+                        android:text="CHECKED IN"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/iv_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/iv_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/iv_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/star" />
+
+                <ImageView
+                    android:id="@+id/iv_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/star" />
+
+                <com.intrix.social.common.view.STextView
+                    android:id="@+id/tv_checkedIn"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+
+                    android:gravity="right|top"
+                    android:text="22,3333,5555"
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <com.intrix.social.common.view.STextView
+
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:background="#FFFFFF"
+                android:gravity="left"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <com.intrix.social.common.view.STextView
+                    android:id="@+id/tv_Reviews"
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.6"
+                    android:gravity="center_vertical"
+                    android:text="13546546Reviews"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+                <com.intrix.social.common.view.STextView
+                    android:id="@+id/tv_startDate"
+                    android:layout_width="0dip"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.4"
+                    android:gravity="center_vertical|right"
+                    android:text="jan 2016"
+                    android:textColor="#FFFFFF"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+
+                            android:id="@+id/iv_call"
+                            android:layout_width="60dip"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/phone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+
+                            android:id="@+id/iv_checkdin"
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/tick" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="0.25"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+
+                            android:id="@+id/iv_selfie"
+                            android:layout_width="60dip"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/selfi" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:orientation="horizontal">
+
+
+                        <ImageView
+
+                            android:id="@+id/iv_people"
+                            android:layout_width="60dip"
+                            android:layout_height="60dip"
+                            android:layout_gravity="center"
+                            android:src="@drawable/userrename" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <com.intrix.social.common.view.STextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.23"
+                        android:gravity="top|center"
+                        android:text="Call"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold">
+
+
+                    </com.intrix.social.common.view.STextView>
+
+                    <com.intrix.social.common.view.STextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="top|center"
+                        android:text="Checked In"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold">
+
+
+                    </com.intrix.social.common.view.STextView>
+
+                    <com.intrix.social.common.view.STextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="top|center"
+                        android:text="Selfie"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold">
+
+
+                    </com.intrix.social.common.view.STextView>
+
+                    <com.intrix.social.common.view.STextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.28"
+                        android:gravity="top|center"
+                        android:text="Discover People"
+                        android:textColor="#FFFFFF"
+                        android:textSize="13sp"
+                        android:textStyle="bold">
+
+
+                    </com.intrix.social.common.view.STextView>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/reserve_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserving table..."
+                android:textColor="@android:color/white"
+                android:visibility="gone" />
+
+            <com.intrix.social.common.view.SBtnView
+                android:id="@+id/reserve_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ff5700"
+                android:text=" #Reserve a table"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/signup">
+
+    <!--<com.intrix.social.common.view.STextView-->
+        <!--android:id="@+id/street_label"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:text="@string/church_street"-->
+        <!--android:textSize="22sp"-->
+        <!--android:gravity="bottom"-->
+        <!--android:drawablePadding="4dp"-->
+        <!--android:paddingBottom="12dp"-->
+        <!--android:textAllCaps="true"-->
+        <!--android:drawableLeft="@drawable/ic_location_on_white_24dp"-->
+        <!--android:textColor="@android:color/white" />-->
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_above="@id/street_label"
+        android:layout_centerHorizontal="false"
+        android:layout_centerInParent="true"
+        android:layout_width="272dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:layout_height="wrap_content"
+        android:paddingLeft="22dp"
+        android:paddingBottom="70dp" />
+
+    <!--  fixed by Damoc
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/sign_up"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal|bottom"
+        android:layout_margin="12dp">
+        <com.intrix.social.common.view.STextView
+            android:text="@string/hate_them"
+            android:textAllCaps="true"
+            android:textColor="#b6b6b6"
+            android:layout_width="wrap_content"
+            android:textSize="11sp"
+            android:layout_height="wrap_content"/>
+        <com.intrix.social.common.view.STextView
+            android:text="@string/sign_up"
+            android:textSize="16sp"
+            android:textAllCaps="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>-->
+
+    <com.intrix.social.common.view.SBtnView
+        android:id="@+id/sign_in_facebook"
+        android:text="@string/sign_in_facebook"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        style="?borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:background="@drawable/facebook_button"/>
+
+
+    <!--   Changed by Damoc:
+    <com.intrix.social.common.view.SBtnView
+        android:id="@+id/sign_in_google"
+        android:layout_above="@id/sign_in_facebook"
+        android:textColor="@android:color/white"
+        android:text="@string/sign_in_google"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="12dp"
+        style="?borderlessButtonStyle"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/google_button"/>-->
+</RelativeLayout>

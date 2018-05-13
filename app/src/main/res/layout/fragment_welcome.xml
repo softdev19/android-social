@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/fl_home"
+    android:layout_height="match_parent"
+    android:background="@color/s_orange">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_city" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="36dp" />
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Namasakara Bengaluru"
+                android:textColor="@android:color/white"
+                android:textSize="26sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btnHolder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.intrix.social.common.view.STextView
+                android:visibility="gone"
+                android:id="@+id/reserve_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reserving table..."
+                android:textColor="@android:color/white" />
+
+            <com.intrix.social.common.view.SBtnView
+                android:id="@+id/allot_table"
+                android:layout_width="200dp"
+                android:layout_height="32dp"
+                android:background="@drawable/btn_white_stroke"
+                android:text="Request table"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="18dp" />
+
+            <com.intrix.social.common.view.SBtnView
+                android:id="@+id/reserve_table"
+                android:layout_width="200dp"
+                android:layout_height="32dp"
+                android:background="@drawable/btn_white_stroke"
+                android:text="I am here"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="18dp" />
+
+            <com.intrix.social.common.view.SBtnView
+                android:id="@+id/menu"
+                android:layout_width="200dp"
+                android:layout_height="32dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/btn_white_stroke"
+                android:text="Explore social"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnHolder"
+            android:layout_below="@id/top_view"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Welcome to"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="20dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_social" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_action_image_dehaze" />
+</FrameLayout>

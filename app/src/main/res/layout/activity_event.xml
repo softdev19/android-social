@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/app_bar_height"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            android:padding="0dp"
+            app:contentScrim="@color/splash_dark"
+            app:expandedTitleMarginEnd="64dp"
+            app:expandedTitleMarginStart="48dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <ImageView
+                android:id="@+id/event_poster"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/deer"
+                app:layout_collapseMode="parallax"/>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_top_extended"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <com.intrix.social.common.view.STextView
+                    android:id="@+id/artist_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stalvart John"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_location_on_white_24dp"/>
+
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.intrix.social.common.view.STextView
+                        android:id="@+id/event_location"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Church Street Social"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_access_time_white_24dp"/>
+
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.intrix.social.common.view.STextView
+                        android:id="@+id/event_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9 pm - 1 am"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="12dp"
+                        android:layout_height="12dp"
+                        android:src="@drawable/ic_credit_card_white_24dp"/>
+
+                    <Space
+                        android:layout_width="4dp"
+                        android:layout_height="wrap_content"/>
+
+                    <com.intrix.social.common.view.STextView
+                        android:id="@+id/amount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Free"
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp"/>
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"/>
+
+                <com.intrix.social.common.view.SBtnView
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:background="@drawable/btn_orange_event"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp"
+                    android:text="@string/church_street"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="12dp"/>
+
+            </LinearLayout>
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_activity_event"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fmenu"
+        style="@style/RightDropDownFabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="245dp"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        android:src="@drawable/ic_send_white_24dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_split"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Share"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_online"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_heart_white_24dp"
+            app:fab_label="Favorite"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_cash"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallet_white_24dp"
+            app:fab_label="Pay online"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_card"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_location_on_white_24dp"
+            app:fab_label="RSPV"/>
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</android.support.design.widget.CoordinatorLayout>

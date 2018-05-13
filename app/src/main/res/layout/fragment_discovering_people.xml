@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/splash_dark"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:minHeight="?attr/actionBarSize"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="@dimen/content_padding_normal"
+            android:src="@drawable/logo" />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/discover_anim_holder"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/circle_bg" />
+<!--
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/rp1"
+            android:layout_width="360dp"
+            android:layout_height="360dp"
+            android:indeterminate="true"
+            android:layout_centerInParent="true"
+            app:cpb_color="@color/splash_accent"
+            app:cpb_max_sweep_angle="120"
+            app:cpb_min_sweep_angle="120"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_stroke_width="4dp"
+            app:cpb_sweep_speed="1.2" />
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/rp2"
+            android:layout_width="281dp"
+            android:layout_height="281dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            app:cpb_color="@color/splash_accent"
+            app:cpb_max_sweep_angle="100"
+            app:cpb_min_sweep_angle="100"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_stroke_width="4dp"
+            app:cpb_sweep_speed="1.0" />
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/rp3"
+            android:layout_width="222dp"
+            android:layout_height="222dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            app:cpb_color="@color/splash_accent"
+            app:cpb_max_sweep_angle="110"
+            app:cpb_min_sweep_angle="120"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_stroke_width="4dp"
+            app:cpb_sweep_speed="1.2" />
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/rp4"
+            android:layout_width="156dp"
+            android:layout_height="156dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            app:cpb_color="@color/splash_accent"
+            app:cpb_max_sweep_angle="100"
+            app:cpb_min_sweep_angle="125"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_stroke_width="4dp"
+            app:cpb_sweep_speed="0.9" />
+
+        <fr.castorflex.android.circularprogressbar.CircularProgressBar
+            android:id="@+id/rp5"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            app:cpb_color="@color/splash_accent"
+            app:cpb_max_sweep_angle="130"
+            app:cpb_min_sweep_angle="130"
+            app:cpb_rotation_speed="1.0"
+            app:cpb_stroke_width="4dp"
+            app:cpb_sweep_speed="0.5" />
+-->
+        <!--<ImageView-->
+        <!--android:id="@+id/logo_splash"-->
+        <!--android:layout_width="272dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:layout_marginBottom="24dp"-->
+        <!--android:layout_marginTop="24dp"-->
+        <!--android:paddingLeft="22dp"-->
+        <!--android:src="@drawable/logo" />-->
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:src="@drawable/ic_home_discover_people"
+            app:layout_anchorGravity="center" />
+
+        <ListView android:id="@+id/people_list"
+            android:background="@color/md_white_1000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8">
+
+        <!--<com.intrix.social.common.view.STextView-->
+            <!--android:id="@+id/tv_tag_discover"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginBottom="@dimen/content_padding_cycle"-->
+            <!--android:text="#Acting #Dancing #Star"-->
+            <!--android:textColor="@android:color/white"-->
+            <!--android:textSize="@dimen/text_large_1" />-->
+
+        <com.intrix.social.common.view.SBtnView
+            android:id="@+id/btn_filter_by_interest"
+            style="?borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_orange_bg"
+            android:onClick="onClickGetStarted"
+            android:paddingLeft="@dimen/content_padding_cycle"
+            android:paddingRight="@dimen/content_padding_cycle"
+            android:layout_marginTop="@dimen/element_padding_normal"
+            android:text="#Discover"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/content_padding_cycle"
+            />
+<!-- android:text="#Filter by interest" -->
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/content_padding_cycle"
+            android:drawableLeft="@drawable/ic_location_on_white_24dp"
+            android:drawablePadding="@dimen/element_padding_normal"
+            android:gravity="center"
+            android:paddingLeft="@dimen/content_padding_tri"
+            android:paddingRight="@dimen/content_padding_tri"
+            android:text="Church Street, Bangalore"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_medium_1" />
+    </RelativeLayout>
+
+</LinearLayout>
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/back"
+        android:layout_margin="16dp"
+        android:padding="6dp" />
+
+</FrameLayout>

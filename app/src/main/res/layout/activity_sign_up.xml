@@ -1,0 +1,163 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/signup1"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startup_gradient">
+    <com.intrix.social.common.view.STextView
+        android:id="@+id/signuptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/text_light"
+        android:textSize="@dimen/startup_title_text" />
+
+    <EditText
+        android:id="@+id/phonenumber"
+        android:layout_width="@dimen/startup_edittext_width"
+        android:layout_height="@dimen/startup_edittext_height"
+        android:layout_below="@id/signuptext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/textview_bg"
+        android:hint="@string/phone_number"
+        android:padding="5dp"
+        android:textColor="@color/text_light"
+        android:textColorHint="@color/text_light"
+        android:textSize="@dimen/startup_edittext_text" />
+
+    <RelativeLayout
+        android:id="@+id/passwordHolder"
+        android:layout_width="@dimen/startup_edittext_width"
+        android:layout_height="@dimen/startup_edittext_height"
+        android:layout_below="@id/phonenumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="@dimen/startup_edittext_width"
+            android:layout_height="@dimen/startup_edittext_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/textview_bg"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColor="@color/text_light"
+            android:textColorHint="@color/text_light"
+            android:textSize="@dimen/startup_edittext_text" />
+
+        <ImageView
+            android:id="@+id/togglePassword"
+            android:layout_width="@dimen/starup_eyeball"
+            android:layout_height="@dimen/starup_eyeball"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/eyeball" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/confirmPasswordHolder"
+        android:layout_width="@dimen/startup_edittext_width"
+        android:layout_height="@dimen/startup_edittext_height"
+        android:layout_below="@id/passwordHolder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp">
+
+        <EditText
+            android:id="@+id/confirmpassword"
+            android:layout_width="@dimen/startup_edittext_width"
+            android:layout_height="@dimen/startup_edittext_height"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/textview_bg"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:padding="5dp"
+            android:textColor="@color/text_light"
+            android:textColorHint="@color/text_light"
+            android:textSize="@dimen/startup_edittext_text" />
+
+        <ImageView
+            android:id="@+id/toggleConfirmPassword"
+            android:layout_width="@dimen/starup_eyeball"
+            android:layout_height="@dimen/starup_eyeball"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:padding="5dp"
+            android:src="@drawable/eyeball" />
+    </RelativeLayout>
+
+    <com.intrix.social.common.view.SBtnView
+        android:id="@+id/signup_btn"
+        android:layout_width="@dimen/startup_edittext_width"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/confirmPasswordHolder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_bg_orange"
+        android:text="@string/sign_up"
+        android:textColor="@color/text_light" />
+
+    <LinearLayout
+        android:id="@+id/gfholder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_below="@id/signup_btn"
+        android:gravity="center_vertical"
+        android:layout_marginTop="30dp">
+
+        <ImageButton
+            android:id="@+id/gplus_btn"
+            android:layout_width="@dimen/startup_circle_btn"
+            android:layout_height="@dimen/startup_circle_btn"
+            android:src="@drawable/google_plus"
+            android:background="@drawable/circular_button_ripple_selector" />
+        <com.intrix.social.common.view.STextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerVertical="true"
+            android:text="@string/or"
+            android:textColor="@color/text_light"
+            android:textSize="@dimen/startup_small_text" />
+        <ImageButton
+            android:id="@+id/facebook_btn"
+            android:layout_width="@dimen/startup_circle_btn"
+            android:layout_height="@dimen/startup_circle_btn"
+            android:src="@drawable/facebook_box"
+            android:background="@drawable/circular_button_ripple_selector"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gfholder"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/text_light"
+        android:text="@string/already_account"
+        android:textSize="@dimen/startup_small_text"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:text="@string/terms_privacy"
+        android:textColor="@color/text_light2"
+        android:textSize="@dimen/startup_micro_text"/>
+</RelativeLayout>
+</RelativeLayout>

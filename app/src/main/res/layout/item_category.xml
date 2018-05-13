@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="204dp">
+
+    <ImageView
+        android:id="@+id/item_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:id="@+id/item_info_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:src="@drawable/ic_heart_white_24dp"
+            android:layout_width="16dp"
+            android:layout_height="16dp"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/liked_number"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:text="321"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_chat_bubble_black_24dp"
+            android:tint="@android:color/white"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/comment_number"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_margin="6dp"
+            android:layout_height="wrap_content"
+            android:text="120"/>
+    </LinearLayout>
+
+    <com.intrix.social.common.view.STextView
+        android:id="@+id/item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:layout_above="@id/item_info_holder"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Social Substantials"
+        android:textSize="24sp"/>
+</RelativeLayout>

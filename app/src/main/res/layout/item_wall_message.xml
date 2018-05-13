@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent"
+    android:minHeight="56dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"
+        android:background="@drawable/wall_message"
+        android:orientation="horizontal">
+
+        <com.mikepenz.materialdrawer.view.BezelImageView
+            android:id="@+id/image"
+            android:layout_width="36dp"
+            android:layout_height="40dp"
+            android:scaleType="centerCrop"
+            android:src="#000"
+            android:tint="#5bff4545"
+            app:biv_maskDrawable="@drawable/wall_message_mask"/>
+
+        <Space
+            android:layout_width="5dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\@yarolegovich"
+                android:textColor="#ababab"
+                android:textSize="10sp"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="false"
+                android:text="Hola, testing layout! Hola, testing layout! Hola, testing layout! Hola, testing layout! Hola, testing layout! Hola, testing layout!"
+                android:textColor="@color/text_primary"/>
+        </LinearLayout>
+
+        <Space
+            android:layout_width="6dp"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</FrameLayout>

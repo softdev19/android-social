@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="64dp"
+    android:paddingBottom="4dp"
+    android:paddingRight="@dimen/chat_message_side_padding"
+    android:paddingLeft="@dimen/chat_message_other_side_padding"
+    android:paddingTop="4dp">
+
+    <com.mikepenz.materialdrawer.view.BezelImageView
+        android:id="@+id/user_chat_image"
+        android:layout_width="@dimen/chat_head_size"
+        android:layout_height="@dimen/chat_head_size"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/chat_image_side_margin"
+        android:src="@drawable/no_image"
+        app:biv_maskDrawable="@drawable/circle_mask" />
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_toLeftOf="@id/user_chat_image"
+        android:layout_toStartOf="@id/user_chat_image">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@drawable/message_background"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <com.rockerhieu.emojicon.EmojiconTextView
+                android:id="@+id/message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="false"
+                android:text="Hi need your help!"
+                android:textColor="@color/text_secondary"/>
+
+            <ImageView
+                android:id="@+id/message_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:visibility="gone"/>
+        </FrameLayout>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:src="@drawable/white_chat_arrow"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/message_layout"
+        android:layout_alignStart="@id/message_layout"
+        android:layout_below="@id/message_layout"
+        android:gravity="center_vertical|left"
+        android:text="11:27 pm"
+        android:textSize="6sp"
+        android:textColor="@color/chat_time_text"
+        android:layout_marginLeft="5dp" />
+        <!--android:drawableLeft="@drawable/tick"-->
+        <!--android:drawablePadding="3dp"-->
+
+</RelativeLayout>

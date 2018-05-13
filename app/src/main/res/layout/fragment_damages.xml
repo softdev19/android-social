@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/wall_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_top_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wall"/>
+
+    <HorizontalScrollView
+        android:orientation="horizontal"
+        android:id="@+id/tag_holder"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/label_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wall_image"
+        android:layout_marginTop="34dp"
+        android:orientation="horizontal">
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/table_no_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16dp"
+            android:text="Table No :"
+            android:textColor="@color/s_orange"
+            android:textSize="12sp"/>
+
+        <Space
+            android:layout_width="4dp"
+            android:layout_height="wrap_content"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/table_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="12"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <TableLayout
+        android:id="@+id/total_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="8dp">
+
+        <TableRow
+            android:paddingLeft="32dp"
+            android:paddingRight="16dp">
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:textColor="@color/text_secondary"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/sub_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="4440"
+                android:textColor="@color/text_secondary"/>
+        </TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="4dp"
+            android:background="#d0d0d0"/>
+
+        <TableRow
+            android:paddingLeft="32dp"
+            android:paddingRight="16dp">
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taxes"
+                android:textColor="@color/text_secondary"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/taxes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="40"
+                android:textColor="@color/text_secondary"/>
+        </TableRow>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="4dp"
+            android:background="#d0d0d0"/>
+
+        <TableRow
+            android:layout_marginTop="4dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="16dp">
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="4480"
+                android:textColor="@color/text_primary"
+                android:textSize="20sp"/>
+        </TableRow>
+
+        <FrameLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d0d0d0"/>
+
+        <TableRow
+            android:layout_marginTop="0dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="16dp">
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:textSize="20sp"
+                android:text="Remaining"
+                android:textColor="@color/text_primary"/>
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/remaining"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:gravity="right"
+                android:text="4480"/>
+        </TableRow>
+
+        <FrameLayout
+            android:id="@+id/your_amount_line"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d0d0d0"/>
+
+        <TableRow
+            android:id="@+id/your_amount_section"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="32dp"
+            android:visibility="gone"
+            android:paddingRight="16dp">
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Your Amount"
+                android:textColor="@color/text_primary"/>
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/your_amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:gravity="right"
+                android:text="4480"/>
+        </TableRow>
+    </TableLayout>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/total_table"
+        android:layout_below="@id/label_container"
+        android:layout_marginTop="8dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <LinearLayout
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:src="@drawable/ic_emoticon_sad_grey600_48dp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"/>
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/no_order"
+            android:textColor="@color/text_secondary"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/overlay"
+        android:clickable="true"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wall_image"
+        android:background="#dcffffff"
+        android:visibility="gone"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fmenu"
+        style="@style/RightDropDownFabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:src="@drawable/ic_send_white_24dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_card"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_credit_card_white_24dp"
+            app:fab_label="Pay by card"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_cash"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_currency_inr_white_24dp"
+            app:fab_label="Pay by Cash"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_online"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_wallet_white_24dp"
+            app:fab_label="Pay online"/>
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+            <!--android:id="@+id/fab_split"-->
+            <!--style="@style/MiniFab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_account_circle_white_24dp"-->
+            <!--app:fab_label="Split bill"-->
+            <!--/>-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_full_bill"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account_circle_white_24dp"
+            app:fab_label="Get full bill"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_my_bill"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_account_circle_white_24dp"
+            app:fab_label="Get my bill"/>
+    </com.github.clans.fab.FloatingActionMenu>
+</RelativeLayout>

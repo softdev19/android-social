@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            tools:background="#7d000000">
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:src="@drawable/ic_arrow_back_white_24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="vertical"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp">
+
+                <com.intrix.social.common.view.STextView
+                    android:id="@+id/item_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    tools:text="Testing"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"/>
+
+                <com.viewpagerindicator.CirclePageIndicator
+                    android:id="@+id/pager_indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:padding="2dp"/>
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="16dp"/>
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="12dp"
+                    android:paddingRight="12dp">
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_heart_outline_grey600_24dp"
+                            android:tint="@color/s_orange"/>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"/>
+
+                        <com.intrix.social.common.view.STextView
+                            android:id="@+id/item_favorites"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="234"/>
+
+                        <Space
+                            android:layout_width="8dp"
+                            android:layout_height="wrap_content"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_comment_text_outline_grey600_24dp"
+                            android:tint="@color/s_orange"/>
+
+                        <Space
+                            android:layout_width="2dp"
+                            android:layout_height="wrap_content"/>
+
+                        <com.intrix.social.common.view.STextView
+                            android:id="@+id/item_comments"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="35"/>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"/>
+
+                    <com.intrix.social.common.view.STextView
+                        android:id="@+id/item_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Virgins mary, Eggs&amp;Bacon.Virgins mary, Eggs&amp;Bacon.Virgins mary, Eggs&amp;Bacon.Virgins mary, Eggs&amp;Bacon.Virgins mary, Eggs&amp;Bacon.Virgins mary, Eggs&amp;Bacon."/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.intrix.social.common.view.STextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price"/>
+
+                        <Space
+                            android:layout_width="4dp"
+                            android:layout_height="wrap_content"/>
+
+                        <com.intrix.social.common.view.STextView
+                            android:id="@+id/item_price"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/price_with_val"/>
+
+                        <ImageView
+                            android:id="@+id/amount_minus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_remove_black_24dp"
+                            android:tint="@color/text_primary"/>
+
+                        <com.intrix.social.common.view.STextView
+                            android:id="@+id/item_amount"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/text_primary"
+                            android:textSize="18sp"/>
+
+                        <ImageView
+                            android:id="@+id/amount_plus"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="4dp"
+                            android:src="@drawable/ic_add_black_24dp"
+                            android:tint="@color/text_primary"/>
+
+                        <Space
+                            android:layout_width="12dp"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="4dp"/>
+
+                    <com.intrix.social.common.view.STextView
+                        android:id="@+id/customize"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:paddingTop="8dp"
+                        android:paddingBottom="8dp"
+                        android:textColor="@color/s_orange"
+                        android:text="@string/customize"/>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="8dp"/>
+
+                    <com.intrix.social.common.view.STextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="#Loved by your friends"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:paddingBottom="12dp"
+                        android:paddingTop="12dp">
+
+                        <com.mikepenz.materialdrawer.view.BezelImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/arya"
+                            app:biv_maskDrawable="@drawable/circle_mask"/>
+
+                        <com.mikepenz.materialdrawer.view.BezelImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/robbie"
+                            app:biv_maskDrawable="@drawable/circle_mask"/>
+
+                        <com.mikepenz.materialdrawer.view.BezelImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/stark"
+                            app:biv_maskDrawable="@drawable/circle_mask"/>
+
+                        <com.mikepenz.materialdrawer.view.BezelImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/robbie"
+                            app:biv_maskDrawable="@drawable/circle_mask"/>
+
+                        <com.mikepenz.materialdrawer.view.BezelImageView
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_marginLeft="6dp"
+                            android:layout_marginRight="6dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/arya"
+                            app:biv_maskDrawable="@drawable/circle_mask"/>
+                    </LinearLayout>
+
+                    <Space
+                        android:layout_width="wrap_content"
+                        android:layout_height="12dp"/>
+
+                    <com.intrix.social.chat.utils.FlowLayout
+                        android:id="@+id/hashtags"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <include layout="@layout/item_food_hashtag"/>
+
+                        <include layout="@layout/item_food_hashtag"/>
+                    </com.intrix.social.chat.utils.FlowLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+            <FrameLayout
+                android:id="@+id/overlay"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#dcffffff"
+                android:visibility="gone"/>
+
+        </FrameLayout>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fmenu"
+        style="@style/RightDropDownFabMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="24dp"
+        android:src="@drawable/ic_send_white_24dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_share"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Share"/>
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+            <!--android:id="@+id/fab_favorite"-->
+            <!--style="@style/MiniFab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:fab_label="Favorite"/>-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_confirm"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Confirm"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_customize"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Customize"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_order"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_add_white_24dp"
+            app:fab_label="Order"/>
+    </com.github.clans.fab.FloatingActionMenu>
+</FrameLayout>

@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:paddingBottom="12dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="12dp">
+
+    <TableRow
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_number"
+            android:textAllCaps="true"
+            android:textColor="@color/payment_text"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <com.intrix.social.common.view.SEditText
+            android:id="@+id/card_number"
+            style="@style/PaymentEditText"
+            android:maxLength="25"
+            android:inputType="number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="6dp"
+            android:theme="@style/PaymentEditText"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/expiry_date"
+            android:textAllCaps="true"
+            android:textColor="@color/payment_text"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <com.intrix.social.common.view.SEditText
+            android:id="@+id/card_month"
+            style="@style/PaymentEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/month"
+            android:maxLength="2"
+            android:inputType="number"
+            android:paddingBottom="6dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="6dp"
+            android:theme="@style/PaymentEditText"/>
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"/>
+
+        <com.intrix.social.common.view.SEditText
+            android:id="@+id/card_year"
+            style="@style/PaymentEditText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/year"
+            android:maxLength="4"
+            android:inputType="number"
+            android:paddingBottom="6dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="6dp"
+            android:theme="@style/PaymentEditText"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/security_code"
+            android:textAllCaps="true"
+            android:textColor="@color/payment_text"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="4dp">
+
+        <com.intrix.social.common.view.SEditText
+            android:id="@+id/card_security"
+            style="@style/PaymentEditText"
+            android:layout_width="0dp"
+            android:inputType="number"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingBottom="6dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="6dp"
+            android:theme="@style/PaymentEditText"/>
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+    </TableRow>
+
+    <TableRow
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="24dp">
+
+        <com.intrix.social.common.view.SBtnView
+            android:id="@+id/pay_now"
+            style="?android:borderlessButtonStyle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_orange_bg"
+            android:text="@string/pay_now"
+            android:textColor="@android:color/white"/>
+    </TableRow>
+
+</TableLayout>

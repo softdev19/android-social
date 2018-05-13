@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/discover_bg"
+        android:scaleType="centerCrop" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:minHeight="?attr/actionBarSize"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <com.intrix.social.common.view.STextView
+                android:id="@android:id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large_1" />
+        </android.support.v7.widget.Toolbar>
+
+        <!--<ImageView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:scaleType="centerInside"-->
+            <!--android:src="@drawable/circle_bg" />-->
+
+        <ImageView
+            android:id="@+id/logo_splash"
+            android:layout_width="272dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="24dp"
+            android:layout_marginTop="24dp"
+            android:paddingLeft="22dp"
+            android:src="@drawable/logo" />
+
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/street_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logo_splash"
+            android:layout_centerInParent="true"
+            android:drawablePadding="4dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/content_padding_normal"
+            android:text="@string/talent"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large_1" />
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/street_label2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/street_label"
+            android:layout_centerInParent="true"
+            android:drawablePadding="4dp"
+            android:gravity="center_horizontal"
+            android:paddingBottom="@dimen/content_padding_normal"
+            android:text="@string/talent_2"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_medium" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.8">
+
+        <com.intrix.social.common.view.SBtnView
+            android:id="@+id/btn_get_stated"
+            style="?borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/content_padding_tri"
+            android:layout_marginEnd="@dimen/content_padding_cycle"
+            android:layout_marginLeft="@dimen/content_padding_cycle"
+            android:layout_marginRight="@dimen/content_padding_cycle"
+            android:layout_marginStart="@dimen/content_padding_cycle"
+            android:layout_marginTop="@dimen/content_padding_tri"
+            android:background="@drawable/btn_orange_bg"
+            android:onClick="onClickGetStarted"
+            android:paddingBottom="@dimen/element_spacing_normal"
+            android:paddingTop="@dimen/element_spacing_normal"
+            android:text="@string/next"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_large_2" />
+
+        <ScrollView
+            android:id="@+id/container_scroll_view"
+            android:layout_width="wrap_content"
+            android:layout_height="180dp"
+            android:layout_centerHorizontal="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:columnCount="5"
+            android:rowCount="5"
+            android:orientation="horizontal"
+            android:id="@+id/talent_holder"
+            android:scrollbars="vertical">
+
+            <ImageButton
+                android:id="@+id/btn11"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:background="@drawable/facebook" />
+
+            <ImageButton
+                android:id="@+id/btn12"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:background="@drawable/googleplus" />
+            <ImageButton
+                android:id="@+id/btn13"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="2"
+                android:layout_row="0"
+                android:background="@drawable/twitter" />
+
+            <ImageButton
+                android:id="@+id/btn14"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="3"
+                android:layout_row="0"
+                android:background="@drawable/behance" />
+
+            <ImageButton
+                android:id="@+id/btn15"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="4"
+                android:layout_row="0"
+                android:background="@drawable/instagram" />
+            <ImageButton
+                android:id="@+id/btn21"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:background="@drawable/youtube" />
+
+
+            <ImageButton
+                android:id="@+id/btn22"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:background="@drawable/vimeo" />
+
+            <ImageButton
+                android:id="@+id/btn23"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="2"
+                android:layout_row="1"
+                android:background="@drawable/soundcloud" />
+
+
+            <ImageButton
+                android:id="@+id/btn24"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="3"
+                android:layout_row="1"
+                android:background="@drawable/dropbox" />
+
+            <ImageButton
+                android:id="@+id/btn25"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_column="4"
+                android:layout_row="1"
+                android:background="@drawable/flickr" />
+
+            <ImageButton
+                android:id="@+id/btn31"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="2"
+                android:layout_column="0"
+                android:background="@drawable/github" />
+
+            <ImageButton
+                android:id="@+id/btn32"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="2"
+                android:layout_column="1"
+                android:background="@drawable/linkedin" />
+
+            <ImageButton
+                android:id="@+id/btn33"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="2"
+                android:layout_column="2"
+                android:background="@drawable/skype" />
+
+            <ImageButton
+                android:id="@+id/btn34"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="2"
+                android:layout_column="3"
+                android:background="@drawable/tumblr" />
+
+            <ImageButton
+                android:id="@+id/btn35"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="2"
+                android:layout_column="4"
+                android:background="@drawable/wordpress" />
+
+            <ImageButton
+                android:id="@+id/btn41"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="3"
+                android:layout_column="0"
+                android:background="@drawable/yahoo" />
+
+            <ImageButton
+                android:id="@+id/btn42"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="3"
+                android:layout_column="1"
+                android:background="@drawable/reddit" />
+
+            <ImageButton
+                android:id="@+id/btn43"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="3"
+                android:layout_column="2"
+                android:background="@drawable/rss" />
+
+            <ImageButton
+                android:id="@+id/btn44"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="3"
+                android:layout_column="3"
+                android:background="@drawable/picasa" />
+
+            <ImageButton
+                android:id="@+id/btn45"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="3"
+                android:layout_column="4"
+                android:background="@drawable/mail" />
+            <ImageButton
+                android:id="@+id/btn51"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="4"
+                android:layout_column="0"
+                android:background="@drawable/pinterest" />
+<!--
+            <ImageButton
+                android:id="@+id/btn52"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="4"
+                android:layout_column="1"
+                android:background="@drawable/selfie" />
+
+            <ImageButton
+                android:id="@+id/btn53"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="4"
+                android:layout_column="2"
+                android:background="@drawable/selfie" />
+
+            <ImageButton
+                android:id="@+id/btn54"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="4"
+                android:layout_column="3"
+                android:background="@drawable/selfie" />
+
+            <ImageButton
+                android:id="@+id/btn55"
+                android:layout_width="@dimen/talent_grid"
+                android:layout_height="@dimen/talent_grid"
+                android:layout_margin="@dimen/talent_grid_pad"
+                android:layout_row="4"
+                android:layout_column="4"
+                android:background="@drawable/selfie" />
+            -->
+        </GridLayout>
+
+        </ScrollView>
+    </RelativeLayout>
+
+</LinearLayout>
+    </RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SEditText">
+        <attr name="drawableTint" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="STextView">
+        <attr name="tint" format="color"/>
+    </declare-styleable>
+
+    <declare-styleable name="RateBar">
+        <attr name="maxRating" format="integer" />
+        <attr name="tint_selected" format="color" />
+        <attr name="rate_icon" format="reference" />
+        <attr name="tint_normal" format="color" />
+        <attr name="icon_size" format="dimension" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/wood_image"
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/chat_top"
+            android:tint="#5a000000"/>
+
+        <ListView
+            android:id="@android:id/list"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:dividerHeight="0dp"
+            android:divider="@null"
+            android:layout_weight="1"
+            android:background="@android:color/white"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/text_secondary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/message"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:hint="Type something ..."
+                android:layout_weight="1"
+                android:theme="@style/ChatMessageField"/>
+
+            <ImageView
+                android:id="@+id/send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:src="@drawable/ic_send_white_24dp"
+                android:tint="@color/text_secondary"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:layout_width="wrap_content"
+            android:tint="@android:color/white"
+            android:layout_height="wrap_content"
+            android:padding="16dp" />
+
+        <com.intrix.social.common.view.STextView
+            android:textColor="@android:color/white"
+            android:textSize="24sp"
+            android:text="@string/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <com.github.clans.fab.FloatingActionButton
+        style="@style/Fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="122dp"
+        android:src="@drawable/ic_location_on_white_24dp"
+        android:id="@+id/take_offline_fab" />
+</FrameLayout>

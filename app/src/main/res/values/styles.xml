@@ -1,0 +1,130 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="CustomAppTheme" parent="AppTheme">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="material_drawer_background">@color/bg_drawer</item>
+        <item name="material_drawer_primary_text">@color/drawer_item</item>
+        <item name="material_drawer_primary_icon">@color/drawer_item</item>
+        <item name="material_drawer_selected">@color/bg_drawer</item>
+        <item name="material_drawer_selected_text">@color/drawer_item</item>
+        <item name="material_drawer_divider">@color/bg_drawer</item>
+    </style>
+
+    <style name="PaymentEditText">
+        <item name="android:background">@drawable/payment_edittext</item>
+        <item name="android:textColor">@color/payment_text</item>
+        <item name="android:textColorHint">@color/payment_hint</item>
+        <item name="colorControlActivated">@color/payment_edittext</item>
+        <item name="colorControlHighlight">@color/payment_edittext</item>
+        <item name="colorControlNormal">@color/payment_edittext</item>
+    </style>
+
+    <style name="CustomAppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="CustomAppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="CustomAppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="SignUpEditText">
+        <item name="colorControlHighlight">@android:color/white</item>
+        <item name="colorControlNormal">@color/text_secondary</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:drawablePadding">6dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">2dp</item>
+    </style>
+
+    <style name="GreyCheckBox">
+        <item name="colorControlHighlight">@color/text_secondary</item>
+        <item name="colorControlNormal">@color/text_secondary</item>
+        <item name="colorControlActivated">@color/text_secondary</item>
+    </style>
+
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="WhiteRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/ratingbar_white</item>
+        <item name="android:minHeight">35dp</item>
+        <item name="android:maxHeight">35dp</item>
+    </style>
+
+    <style name="MiniFab" parent="Fab">
+        <item name="fab_size">mini</item>
+    </style>
+
+    <style name="Fab">
+        <item name="fab_colorNormal">@color/s_orange</item>
+        <item name="fab_colorPressed">#E64A19</item>
+        <item name="fab_colorRipple">#E64A19</item>
+    </style>
+
+    <style name="ChatMessageField">
+        <item name="colorControlActivated">@android:color/transparent</item>
+        <item name="colorControlHighlight">@android:color/transparent</item>
+        <item name="colorControlNormal">@android:color/transparent</item>
+    </style>
+
+    <style name="DropDownFabMenu">
+        <item name="menu_colorNormal">@color/s_orange</item>
+        <item name="menu_colorPressed">#E64A19</item>
+        <item name="menu_colorRipple">#E64A19</item>
+        <item name="menu_labels_colorNormal">@android:color/transparent</item>
+        <item name="menu_labels_colorPressed">@android:color/transparent</item>
+        <item name="menu_labels_colorRipple">@android:color/transparent</item>
+        <item name="menu_labels_showShadow">false</item>
+        <item name="menu_labels_textColor">@color/text_primary</item>
+        <item name="menu_openDirection">down</item>
+    </style>
+
+    <style name="RightDropDownFabMenu" parent="DropDownFabMenu">
+        <item name="android:layout_gravity">right</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_marginRight">16dp</item>
+    </style>
+
+    <style name="GreySelectEditText">
+        <item name="colorControlActivated">#d4d4d4</item>
+        <item name="colorControlNormal">#747474</item>
+    </style>
+
+    <style name="WorkspaceEditText" parent="GreySelectEditText">
+        <item name="android:layout_marginLeft">@dimen/workspace_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/workspace_side_margin</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColorHint">#b5b5b5</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:padding">14dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="WorkspaceTextLabel">
+        <item name="android:layout_marginLeft">@dimen/workspace_side_margin</item>
+        <item name="android:layout_marginRight">@dimen/workspace_side_margin</item>
+        <item name="android:textColor">@color/s_orange</item>
+    </style>
+
+    <style name="WorkspaceCheckBox">
+        <item name="colorControlActivated">@color/s_orange</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginLeft">45dp</item>
+        <item name="android:layout_marginRight">@dimen/workspace_side_margin</item>
+    </style>
+
+
+</resources>

@@ -1,0 +1,205 @@
+<resources>
+    <string name="app_name">Social</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="list_menu">List Menu</string>
+    <string name="error">Error</string>
+    <string name="error_format">[Error] %s</string>
+    <string name="title_activity_decoder">DecoderActivity</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in">SIGN IN</string>
+    <string name="or">or</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_account">Already have account - sign in</string>
+    <string name="already_member">ALREADY A MEMBER ? SIGN IN</string>
+    <string name="new_account">Create new Account</string>
+
+
+    <string name="terms_privacy">By signing up you agreee to the Terms of Services and Privacy Policy</string>
+
+    <string name="sign_in_failed">Failed to sign in. Please check your network connection and try again.</string>
+    <string name="unknown_error">Unknown error.</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="sound_periscope">Sound Cloud &amp; Periscope</string>
+
+    <array name="drawer_items">
+        <item>Hello</item>
+        <item>my</item>
+        <item>name</item>
+        <item>is</item>
+        <item>Social</item>
+    </array>
+    <string name="title_activity_dash_board">DashBoardActivity</string>
+
+    <string name="home">Home</string>
+    <string name="menu">Food</string>
+    <string name="drink">Drinks</string>
+    <string name="bills">Current Order</string>
+    <string name="transactions">Transactions</string>
+    <string name="tables">Tables</string>
+    <string name="leaderboard">Leaderboard</string>
+    <string name="wall">Social Wall</string>
+    <string name="workspace">Workspace</string>
+    <string name="discover">Discover People</string>
+    <string name="profile">Profile</string>
+    <string name="feedback">Feedback</string>
+    <string name="events">Events</string>
+    <string name="connect">Connect</string>
+    <string name="logout">Logout</string>
+    <string name="wipe_data">Wipe Data/Logout-Dev only</string>
+    <string name="loading">Loading…</string>
+    <string name="GPSAlertDialogMessage">Please ensure location</string>
+    <string name="cancel">Cancel</string>
+    <string name="settings">Settings</string>
+    <string name="service_offline_msg">In the initial phase of Solve, we will not be operating overnight between 12am midnight to 9am in the morning. We are working on it, and look forward to bringing you a 24 hour service in the coming weeks</string>
+    <string name="send">Send</string>
+    <string name="message_field_hint">Write a message</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hint_password">PASSWORD</string>
+    <string name="hint_confirm_password">CONFIRM PASSWORD</string>
+    <string name="church_street">Church Street</string>
+    <string name="hint_email">EMAIL</string>
+    <string name="hint_mobile_number">MOBILE NUMBER</string>
+    <string name="sign_in_facebook">Sign in with Facebook</string>
+    <string name="sign_in_google">Sign in with Google</string>
+    <string name="hate_them">Hate them both?</string>
+    <string name="price">Price:</string>
+    <string name="confirm_order">Confirm your order:</string>
+    <string name="table_no">TableNo</string>
+    <string name="colon">:</string>
+    <string name="customize">Customize</string>
+    <string name="preferences">Preferences</string>
+    
+    <!-- Splash -->
+    <string name="splash_sum">Discover People</string>
+    <string name="splash_desc">Discover the people of your interest across all our outlets</string>
+    <string name="splash_desc_2">Seems like you have not setup your profile. Let us help you set it up. Won\'t take more than 2 mins</string>
+    <string name="description">A few words that would define the cool person you are</string>
+    <string name="description_2">Make sure its not more than 140 words</string>
+    <string name="thing_love">Three things that you love</string>
+    <string name="selfie">An awesome selfie of yours. Tap on the image to change</string>
+    <string name="talent">Show off your talents</string>
+    <!--<string name="talent_2">Come on. Dont be shy. Everyone is good at something :)</string>-->
+    <string name="talent_2">Checking for social apps. Hold your horses.</string>
+
+    <string name="next">Next</string>
+    <string name="splash_get_stated">Get Started</string>
+    <string name="my_people_title">People</string>
+    <string name="leaderboard_title">Leaderboard</string>
+    <string name="up_vote_people_detail">Up Votes</string>
+    <string name="down_vote_people_detail">Down Votes</string>
+    <string name="social_currency">Social Currency</string>
+    <string name="to_pager">Extended Menu</string>
+    <string name="feedbackTitle">#Feedback</string>
+    <string name="damages">#Damages</string>
+    <string name="view_bill">View Bill</string>
+    <string name="card_number">Card number</string>
+    <string name="security_code">Security code</string>
+    <string name="expiry_date">Expity date</string>
+    <string name="pay_now">Pay now</string>
+    <string name="year">Year</string>
+    <string name="month">Month</string>
+    <string name="items_added">%d items added</string>
+    <string name="price_with_val">%d INR</string>
+    <string name="experience_question">How was your experience at Church street Social</string>
+    <string name="awesome">Awesome</string>
+    <string name="ok_ok">OK-OK</string>
+    <string name="bad">Bad</string>
+    <string name="skip">Skip</string>
+    <string name="comment">Leave a comment</string>
+    <string name="tickets_remaining">%s more tickets remaining</string>
+    <string name="about_artist">About %s</string>
+    <string name="no_feedback">Feedback not provided</string>
+    <string name="has_feedback">Feedback provided</string>
+    <string name="say_something">Say something</string>
+
+    <string name="wall_username">\@%s</string>
+    <string name="view_more">View more</string>
+    <string name="coming_soon">Coming soon…</string>
+    <string name="no_order">No orders found\nWhy don\'t you order something?</string>
+    <string name="no_wallet">No wallet found</string>
+    <string name="later">#Later</string>
+    <string name="now">#Now</string>
+    <string name="select_covers_no">Please Select Number of covers</string>
+    <string name="seating_preferences">Seating Preferences</string>
+    <string name="arrival_time">Time of arrival</string>
+    <string name="reserve_seat">#Reserve my seat</string>
+    <string name="add_to_guest_list">Add me to guest list</string>
+
+    <string name="events_hashtags">%1$s with %2$s</string>
+    <string name="rsvp_now">RSVP Now</string>
+    <string name="work">#Work</string>
+    <string name="full_name">Full Name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="email">Email ID</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="sex">Sex</string>
+    <string name="city">City</string>
+    <string name="profession">Profession</string>
+    <string name="area_of_exp">Area of Expertise</string>
+    <string name="why_want_be_social_part">Why would you like to be a part of Social? What will you do with the space?</string>
+    <string name="ws_what_you_do">Tell us more about what you do and how you do it differently</string>
+    <string name="ws_work_links">Tell us briefly why we belong together. Give this question a little extra attention. Also throw in some links of where we can see your work.</string>
+    <string name="ws_additional">What else would you like to tell us that we might have missed out on</string>
+    <string name="ws_how_did_you_find">How did you find out about the workspace at Social?</string>
+    <string name="ws_facebook_link">Please provide the link to your personal Facebook profile</string>
+    <string name="ws_twitter_profile">Please provide the link to your personal Twitter profile</string>
+    <string name="ws_other_links">Any other cool social network links you would like us to look at?</string>
+    <string name="ws_info_question">What if you could trade in your cubicle for a super cool cafe? How much more fun would it be to show up if your boardroom had a bar attached?</string>
+    <string name="chat">Chat</string>
+
+    <string name="ok">OK</string>
+    <string name="total">Total</string>
+
+    <string name="app_id">528905660602002</string>
+    <string name="bill_amount">Bill amount: %d</string>
+    <string name="table_capacity">Table capacity: %d</string>
+    <string name="table_number">Table number: %d</string>
+    <string name="status_reserved">Your table has been reserved</string>
+    <string name="fav_txt">Add favourite gurudwara for Updates.</string>
+    <string name="reminder">Click to Add reminder for Event.</string>
+    <string name="should_not_be_empty">should not be empty.</string>
+    <string name="should_not_be_space">should not have space.</string>
+    <string name="enter_valid_text">Enter valid text.</string>
+    <string name="is_not_valid">is not valid.</string>
+    <string name="msg_you_sure_delete">Are you sure you want to delete</string>
+    <string name="msg_you_sure">Are you sure?</string>
+    <string name="msg_you_sure_add">Are you sure you want to add </string>
+    <string name="msg_you_sure_logout">Are you sure you want to log-out?</string>
+    <string name="record_not_found">Coming soon...</string>
+    <string name="please_wait">please wait</string>
+    <string name="msg_internet_error">Internet is not working please check connection</string>
+    <string name="msg_incorrect_password">email or password is incorrect</string>
+    <string name="msg_incorrect_email">email is not exist</string>
+    <string name="msg_user_exist">User exist with this email id </string>
+    <string name="msg_successful">Successful</string>
+    <string name="msg">payment options will be available shortly.</string>
+    <string name="msg_ok">Ok</string>
+    <string name="msg_forgot_pass">Enter your email and you will get your password on your email.</string>
+
+    <!-- hint -->
+    <string name="hint_user_first_name">FIRST NAME</string>
+    <string name="hint_user_last_name">LAST NAME</string>
+
+    <string name="hint_select_city">Select State for Gurudwara</string>
+    <string name="hint_user_name">USERNAME</string>
+
+
+    <string name="hint_enter_name">Enter name</string>
+
+    <string name="hint_search">Search</string>
+    <string name="hint_enter_password">Enter password</string>
+    <string name="hint_enter_url">Enter video url</string>
+    <string name="hint_phone">PHONE NUMBER</string>
+    <string name="hint_about">ABOUT YOURSELF</string>
+    <string name="hint_report">LEAVE YOUR MESSAGE</string>
+    <string name="hint_profile">PROFILE PICTURE</string>
+    <string name="hint_enter_email">ENTER YOUR EMAIL</string>
+
+</resources>

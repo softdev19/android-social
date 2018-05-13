@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="72dp">
+
+    <FrameLayout
+        android:layout_width="40dp"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:background="#dddddd"/>
+
+        <FrameLayout
+            android:id="@+id/transaction_status"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_gravity="center"
+            android:background="@drawable/dot"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/transaction_profile_image"
+            android:layout_width="52dp"
+            android:layout_height="52dp"
+            android:layout_gravity="center_vertical"
+            android:src="@color/s_orange"
+            app:civ_border_color="#FF000000"
+            app:civ_border_width="0dp"/>
+
+        <TextView
+            android:text="56001"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+
+    </FrameLayout>
+
+    <Space
+        android:layout_width="12dp"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/feedback_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_feedback"
+            android:textColor="@color/text_primary"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="4dp"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/feedback_leave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave the feedback"
+            android:textColor="@color/s_orange"
+            android:textSize="10sp"/>
+
+        <com.intrix.social.common.view.RateBar
+            android:id="@+id/rate_bar"
+            android:descendantFocusability="blocksDescendants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:icon_size="10dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/transaction_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="3700 INR"
+            android:textSize="15sp"/>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="2dp"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/transaction_details"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Card: xxxx:1234"
+            android:textSize="7sp"/>
+    </LinearLayout>
+
+</LinearLayout>

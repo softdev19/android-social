@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:scaleType="centerCrop"
+            android:src="@drawable/workspace"
+            android:tint="#5b000000"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_action_image_dehaze"/>
+
+            <Space
+                android:layout_width="16dp"
+                android:layout_height="wrap_content"/>
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/work"
+                android:textColor="@android:color/white"
+                android:textSize="24sp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/full_name"
+                style="@style/WorkspaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/full_name"
+                android:theme="@style/WorkspaceEditText"/>
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/phone"
+                style="@style/WorkspaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/mobile_number"
+                android:inputType="phone"
+                android:theme="@style/WorkspaceEditText"/>
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/email"
+                style="@style/WorkspaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:theme="@style/WorkspaceEditText"/>
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/date_of_birth"
+                style="@style/WorkspaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/date_of_birth"
+                android:inputType="date"
+                android:theme="@style/WorkspaceEditText"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.STextView
+                style="@style/WorkspaceTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sex"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp"/>
+
+            <Spinner
+                android:id="@+id/sex_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/workspace_side_margin"
+                android:layout_marginRight="@dimen/workspace_side_margin"
+                android:background="@null"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.STextView
+                style="@style/WorkspaceTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/city"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp"/>
+
+            <Spinner
+                android:id="@+id/city_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/workspace_side_margin"
+                android:layout_marginRight="@dimen/workspace_side_margin"
+                android:background="@null"/>
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/profession"
+                style="@style/WorkspaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/profession"
+                android:theme="@style/WorkspaceEditText"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.STextView
+                style="@style/WorkspaceTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/area_of_exp"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="4dp"/>
+
+            <Spinner
+                android:id="@+id/area_of_expertise_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/workspace_side_margin"
+                android:layout_marginRight="@dimen/workspace_side_margin"
+                android:background="@null"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.STextView
+                style="@style/WorkspaceTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/why_want_be_social_part"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
+            <!--<include layout="@layout/ws_checkboxes_why"/>-->
+            <CheckBox
+                android:id="@+id/chk_Opportunity"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Opportunity to collaborate with people"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_ConductMeeting"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Conduct meetings with clients"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_Socialize"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="S[o]cialize"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_NeedWorkSpace"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Need your own workspace"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_Workspace_Event"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Want to conduct workshops/events"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_Showcase"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Showcase your work"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_Social"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Co-create with S[o]CIAL"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="41dp"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+
+                    android:id="@+id/chk_Other_Space"
+                    style="@style/WorkspaceCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Other:"
+                    android:theme="@style/WorkspaceCheckBox"/>
+
+
+                <com.intrix.social.common.view.SEditText
+                    android:id="@+id/et_Other_Space"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:theme="@style/GreySelectEditText"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/workspace_side_margin"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.STextView
+                style="@style/WorkspaceTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ws_what_you_do"/>
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/what_you_do"
+                style="@style/WorkspaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:theme="@style/WorkspaceEditText"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.STextView
+                style="@style/WorkspaceTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ws_work_links"/>
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/work_links"
+                style="@style/WorkspaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:theme="@style/WorkspaceEditText"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.STextView
+                style="@style/WorkspaceTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ws_additional"/>
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/additional"
+                style="@style/WorkspaceEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:theme="@style/WorkspaceEditText"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.STextView
+                style="@style/WorkspaceTextLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ws_how_did_you_find"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"/>
+
+            <!--  <include layout="@layout/ws_checkboxes_how_know"/>-->
+            <CheckBox
+                android:id="@+id/chk_friend"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Friend"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_Social_Media"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Social Media"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_Newspaper"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Newspaper/Magazine"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_Advertisement"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Advertisement"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <CheckBox
+                android:id="@+id/chk_online_media"
+                style="@style/WorkspaceCheckBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Online media"
+                android:theme="@style/WorkspaceCheckBox"/>
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="41dp"
+                    android:layout_height="wrap_content"/>
+
+                <CheckBox
+
+                    android:id="@+id/chk_Other"
+                    style="@style/WorkspaceCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="4dp"
+                    android:text="Other:"
+                    android:theme="@style/WorkspaceCheckBox"/>
+
+
+                <com.intrix.social.common.view.SEditText
+                    android:id="@+id/et_Other"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:singleLine="true"
+                    android:theme="@style/GreySelectEditText"/>
+
+                <android.support.v4.widget.Space
+                    android:layout_width="@dimen/workspace_side_margin"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <com.intrix.social.common.view.SBtnView
+                android:id="@+id/next"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/s_orange"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

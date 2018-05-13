@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/s_orange"
+    android:padding="12dp">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"/>
+
+    <TableRow
+        android:gravity="center_vertical">
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="@string/seating_preferences"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_preferences"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"/>
+    </TableRow>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+
+    <TableRow
+        android:gravity="center_vertical">
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            android:text="@string/arrival_time"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+
+        <Spinner
+            android:id="@+id/spinner_time"
+            android:layout_width="0dp"
+            android:background="@null"
+            android:layout_height="wrap_content"
+            android:layout_weight="10"/>
+    </TableRow>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"/>
+
+    <TableRow
+        android:gravity="center_horizontal">
+        <com.intrix.social.common.view.SBtnView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_white_stroke"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:text="Submit"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"/>
+    </TableRow>
+</TableLayout>

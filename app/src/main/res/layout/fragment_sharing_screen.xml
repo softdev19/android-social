@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout android:id="@+id/fl_home"
+             xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/s_orange">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/image_city"/>
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="36dp"/>
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Comming Soon"
+                android:textColor="@android:color/white"
+                android:textSize="26sp"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_action_image_dehaze"/>
+</FrameLayout>

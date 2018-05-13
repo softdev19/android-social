@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/wall_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_top_height"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wall"/>
+
+    <FrameLayout
+        android:id="@+id/label_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_below="@id/wall_image">
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center_vertical"
+            android:text="#You Got Served"
+            android:textColor="@color/s_orange"
+            android:textSize="26sp"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/order_id"
+            android:text="Order Id: 374234"
+            android:textSize="12sp"
+            android:layout_marginRight="8dp"
+            android:textColor="@color/s_orange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"/>
+
+    </FrameLayout>
+
+    <TableLayout
+        android:id="@+id/total_table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp">
+        <TableRow
+            android:paddingLeft="32dp"
+            android:paddingRight="16dp">
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sub Total"
+                android:textColor="@color/text_secondary"/>
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/sub_total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_secondary"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="4440"/>
+        </TableRow>
+
+        <FrameLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d0d0d0"/>
+
+        <TableRow
+            android:layout_marginTop="12dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="16dp">
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Total"
+                android:textColor="@color/text_primary"/>
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/total"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:gravity="right"
+                android:text="4480"/>
+        </TableRow>
+
+        <FrameLayout
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#d0d0d0"/>
+
+        <TableRow
+            android:layout_marginTop="12dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="16dp">
+            <com.intrix.social.common.view.STextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="Remaining"
+                android:textColor="@color/text_primary"/>
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/remaining"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+                android:textColor="@color/text_primary"
+                android:gravity="right"
+                android:text="4480"/>
+        </TableRow>
+    </TableLayout>
+
+    <com.intrix.social.common.view.STextView
+        android:id="@+id/view_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/total_table"
+        android:textColor="@color/s_orange"
+        android:layout_centerHorizontal="true"
+        android:text="@string/view_more"
+        android:gravity="center_vertical"
+        app:tint="@color/s_orange"
+        android:drawableRight="@drawable/ic_keyboard_arrow_down_white_24dp"
+        android:textSize="16sp"
+        android:padding="8dp"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_above="@id/view_more"
+        android:layout_below="@id/label_container"
+        android:divider="@null"
+        android:dividerHeight="0dp"/>
+
+    <com.github.clans.fab.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="86dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_done_white_24dp"
+        app:fab_colorNormal="@color/s_orange"
+        app:fab_colorPressed="#E64A19"
+        app:fab_colorRipple="#E64A19"/>
+</RelativeLayout>

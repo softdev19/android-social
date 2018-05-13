@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="startup_text_bg">#CC000000</color>
+    <color name="btn_bg">#FF2F00</color>
+    <color name="s_orange">#EE5223</color>
+    <color name="text_light">#ffffff</color>
+    <color name="text_light2">#ffd3c1</color>
+    <color name="bg_drawer">#ffffff</color>
+    <color name="drawer_item">#999999</color>
+    
+    <color name="payment_edittext">#dbe5eb</color>
+    <color name="payment_text">#8d9da2</color>
+    <color name="payment_hint">#bcc8cc</color>
+
+    <color name="events_grey">#b9b7b7</color>
+
+    <color name="theme_accent_color">#FF339999</color>
+    <color name="theme_accent_color_light">#44339999</color>
+
+    <color name="menu_text">#000000</color>
+    <color name="menu_text_selected">#EE5223</color>
+    <color name="menu_icon">#888888</color>
+    <color name="menu_icon_selected">#FF2F00</color>
+
+    <color name="opaque_black">#a6000000</color>
+
+    <color name="chat_message">#ffffff</color>
+    <color name="chat_response">#f6eaa0</color>
+    <color name="chat_background">#f7f5f6</color>
+    <color name="chat_time_text">#B6B6B6</color>
+
+    <color name="text_primary">@android:color/black</color>
+    <color name="text_secondary">#727272</color>
+    <color name="divider_color">#B6B6B6</color>
+
+    <color name="chat_time_primary">@android:color/black</color>
+    <color name="chat_time_secondary">@color/text_secondary</color>
+
+
+    <color name="item_dish_tint">#64000000</color>
+
+    <color name="splash_dark">#171f36</color>
+    <color name="splash_accent">#EE5223</color>
+    <color name="splash_accent_1">#e54e00</color>
+    <color name="black_40">#66000000</color>
+    <color name="divice_item_my_people">#4dd3c1</color>
+</resources>

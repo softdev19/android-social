@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="204dp">
+
+    <ImageView
+        android:id="@+id/event_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="4dp"/>
+
+    <LinearLayout
+        android:id="@+id/item_info_holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_access_time_white_24dp"
+            android:tint="@android:color/white"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/event_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7.00 pm"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+
+        <Space
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"/>
+
+        <com.mikepenz.materialdrawer.view.BezelImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_perm_contact_calendar_white_24dp"
+            android:tint="@android:color/white"
+            app:biv_maskDrawable="@drawable/circle_mask"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/tickets_remaining"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tickets_remaining"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+    <com.intrix.social.common.view.STextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/item_info_holder"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Social Substantials"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"/>
+</RelativeLayout>

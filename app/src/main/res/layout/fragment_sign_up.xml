@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/signup">
+
+
+    <com.intrix.social.common.view.SEditText
+        android:id="@+id/location"
+        android:text="@string/church_street"
+        android:textAllCaps="true"
+        app:tint="@android:color/white"
+        android:layout_centerInParent="true"
+        android:enabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_location_on_white_24dp"
+        android:theme="@style/SignUpEditText"
+        style="@style/SignUpEditText"/>
+
+    <com.intrix.social.common.view.SEditText
+        android:id="@+id/mobile_number"
+        android:hint="@string/hint_mobile_number"
+        android:inputType="phone"
+        android:drawableLeft="@drawable/ic_account_box_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/location"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/SignUpEditText"
+        style="@style/SignUpEditText"/>
+
+    <com.intrix.social.common.view.SEditText
+        android:id="@+id/email_id"
+        android:hint="@string/hint_email"
+        android:inputType="textEmailAddress"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mobile_number"
+        android:layout_centerHorizontal="true"
+        android:theme="@style/SignUpEditText"
+        style="@style/SignUpEditText"/>
+
+
+    <com.intrix.social.common.view.SEditText
+        android:id="@+id/password"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:layout_below="@id/location"
+        android:hint="@string/hint_password"
+        android:theme="@style/SignUpEditText"
+        style="@style/SignUpEditText"/>
+
+    <com.intrix.social.common.view.SEditText
+        android:id="@+id/confirm_password"
+        android:drawableLeft="@drawable/ic_lock_black_24dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="@string/hint_confirm_password"
+        android:layout_below="@id/password"
+        android:theme="@style/SignUpEditText"
+        style="@style/SignUpEditText"/>
+
+    <com.intrix.social.common.view.STextView
+        android:id="@+id/sign_up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/mobile_number"
+        android:layout_centerHorizontal="true"
+        android:text="@string/sign_up"
+        android:textSize="22sp"
+        android:gravity="bottom"
+        android:padding="12dp"
+        android:layout_marginBottom="20dp"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white" />
+
+    <ImageView
+        android:src="@drawable/logo"
+        android:layout_above="@id/sign_up"
+        android:layout_centerHorizontal="true"
+        android:layout_width="272dp"
+        android:paddingLeft="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_height="wrap_content"/>
+
+    <com.intrix.social.common.view.SBtnView
+        android:id="@+id/facebook_google_sign_in"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="14dp"
+        style="?borderlessButtonStyle"
+        android:background="@drawable/google_button"
+        android:text="Sign in with Google/Facebook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <com.intrix.social.common.view.STextView
+        android:textSize="12sp"
+        android:text="Or you still can"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/text_secondary"
+        android:textAllCaps="true"
+        android:layout_above="@id/facebook_google_sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

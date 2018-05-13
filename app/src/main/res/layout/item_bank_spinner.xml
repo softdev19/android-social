@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.intrix.social.common.view.STextView
+        android:id="@android:id/text1"
+        android:text="All other banks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginBottom="4dp"
+        android:layout_centerInParent="true"
+        android:textColor="@color/payment_text"/>
+
+    <Space
+        android:id="@+id/l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Space
+        android:id="@+id/r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:tint="@color/payment_text"
+        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+        android:layout_toRightOf="@android:id/text1"
+        android:layout_centerVertical="true"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:layout_marginTop="8dp"
+        android:layout_below="@android:id/text1"
+        android:background="@color/payment_text"/>
+
+</RelativeLayout>

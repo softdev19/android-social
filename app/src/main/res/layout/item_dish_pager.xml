@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="380dp"
+    android:layout_gravity="center"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="156dp">
+
+        <ImageView
+            android:id="@+id/item_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            tools:src="@drawable/temp_dish"/>
+
+        <LinearLayout
+            android:id="@+id/like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@drawable/ic_heart_white_24dp"
+                android:tint="@android:color/white"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/likes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3600+"
+                android:textColor="@android:color/white"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/info_panel"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp">
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/item_name_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Who's Your PAPAya?"
+            android:textColor="@color/text_primary"
+            android:textSize="24sp"/>
+
+        <com.intrix.social.common.view.STextView
+            android:id="@+id/item_info"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="8dp"
+            android:ellipsize="marquee"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:text="With Vermicell Noodles, Cabbage, Bell Papers and Peanuts"
+            android:textColor="@color/text_secondary"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:gravity="center_vertical"
+            android:paddingTop="6dp">
+
+            <com.mikepenz.materialdrawer.view.BezelImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/arya"
+                app:biv_maskDrawable="@drawable/circle_mask"/>
+
+            <com.mikepenz.materialdrawer.view.BezelImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/robbie"
+                app:biv_maskDrawable="@drawable/circle_mask"/>
+
+            <com.mikepenz.materialdrawer.view.BezelImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stark"
+                app:biv_maskDrawable="@drawable/circle_mask"/>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/item_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:text="@string/price_with_val"
+                android:textSize="18sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="64dp"
+    android:paddingBottom="4dp"
+    android:paddingLeft="@dimen/chat_message_side_padding"
+    android:paddingRight="@dimen/chat_message_other_side_padding"
+    android:paddingTop="4dp">
+
+    <com.mikepenz.materialdrawer.view.BezelImageView
+        android:id="@+id/user_chat_image"
+        android:layout_width="@dimen/chat_head_size"
+        android:layout_height="@dimen/chat_head_size"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/chat_image_side_margin"
+        android:src="@drawable/ic_launcher"
+        app:biv_maskDrawable="@drawable/circle_mask"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:id="@+id/message_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@id/user_chat_image"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:src="@drawable/yellow_chat_arrow"
+            android:layout_marginTop="10dp" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/response_background"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp">
+
+            <com.rockerhieu.emojicon.EmojiconTextView
+                android:id="@+id/message_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:singleLine="false"
+                android:text="Lorem ipsum! Dummy text for dummy message for app with dummy networking!"
+                android:textColor="@color/text_secondary"/>
+
+            <ImageView
+                android:id="@+id/message_image"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:scaleType="fitCenter"
+                android:visibility="gone"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/timestamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/message_layout"
+        android:layout_alignRight="@id/message_layout"
+        android:layout_below="@id/message_layout"
+        android:gravity="center_vertical|right"
+        android:text="11:27 pm"
+        android:textSize="6sp"
+        android:textColor="@color/chat_time_text"
+        android:layout_marginRight="5dp" />
+        <!--android:drawableLeft="@drawable/tick"-->
+        <!--android:drawablePadding="3dp"-->
+</RelativeLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="workspace_top_layout_height">220dp</dimen>
+
+</resources>

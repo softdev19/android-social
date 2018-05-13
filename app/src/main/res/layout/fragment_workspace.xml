@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    tools:context="com.intrix.social.fragment.WorkspaceFragment">
+
+    <RelativeLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/workspace_top_layout_height"
+        android:background="@color/s_orange">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_alignParentBottom="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/triangle_white" />
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/logo" />
+
+        <com.intrix.social.common.view.STextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="#Work From Social"
+            android:textColor="@android:color/white"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_userImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/top_view"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-90dp"
+        android:src="@drawable/no_photo"
+        app:civ_border_width="0dp"
+        app:civ_border_color="#FF000000"/>
+
+    <ScrollView
+        android:layout_below="@id/img_userImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:text="Name" />
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/et_userName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Phone Number" />
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/et_phoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="phone" />
+
+            <com.intrix.social.common.view.STextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Company" />
+
+            <com.intrix.social.common.view.SEditText
+                android:id="@+id/et_company"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <com.intrix.social.common.view.SBtnView
+                android:id="@+id/btn_signUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_orange_background_flat"
+                android:text="Sign Up"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="22sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

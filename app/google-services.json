@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_id": "social-offline",
+    "project_number": "316519535463",
+    "name": "social"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316519535463:android:e7fe795f4efe7e12",
+        "client_id": "android:com.intrix.social",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.intrix.social"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

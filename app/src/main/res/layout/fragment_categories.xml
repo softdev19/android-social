@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/overlay"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/wall_image"
+        android:background="#dcffffff"
+        android:visibility="gone"/>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/fmenu"
+        style="@style/DropDownFabMenu"
+        app:menu_openDirection="up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_white_24dp">
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_cart"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Cart"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_tag"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Tag Friend to Order"/>
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+            <!--android:id="@+id/fab_repeat"-->
+            <!--style="@style/MiniFab"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:fab_label="Repeat"/>-->
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_call_bill"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Call for bill"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_discover"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Discover people"/>
+
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/fab_wall"
+            style="@style/MiniFab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_label="Go to wall"/>
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>

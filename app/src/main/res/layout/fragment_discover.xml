@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/discover_bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.8"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/logo_splash"
+                android:layout_width="272dp"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="24dp"
+                android:layout_marginTop="24dp"
+                android:paddingLeft="22dp"
+                android:src="@drawable/logo"/>
+
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/street_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/logo_splash"
+                android:layout_centerInParent="true"
+                android:drawablePadding="4dp"
+                android:gravity="bottom"
+                android:paddingBottom="@dimen/content_padding_normal"
+                android:text="@string/splash_sum"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large_2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3">
+
+            <com.intrix.social.common.view.SBtnView
+                android:id="@+id/btn_get_stated"
+                style="?borderlessButtonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/content_padding_tri"
+                android:layout_marginEnd="@dimen/content_padding_cycle"
+                android:layout_marginLeft="@dimen/content_padding_cycle"
+                android:layout_marginRight="@dimen/content_padding_cycle"
+                android:layout_marginStart="@dimen/content_padding_cycle"
+                android:layout_marginTop="@dimen/content_padding_tri"
+                android:background="@drawable/btn_orange_bg"
+                android:paddingBottom="@dimen/element_spacing_normal"
+                android:paddingTop="@dimen/element_spacing_normal"
+                android:text="@string/splash_get_stated"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_large_2"/>
+
+            <com.intrix.social.common.view.STextView
+                android:id="@+id/discover_info_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btn_get_stated"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:paddingLeft="@dimen/content_padding_tri"
+                android:paddingRight="@dimen/content_padding_tri"
+                android:text="@string/splash_desc"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_medium"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/home"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:src="@drawable/ic_action_image_dehaze"-->
+        <!--android:layout_margin="16dp"/>-->
+    <ImageView
+        android:id="@+id/home"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:padding="10dp"
+        android:src="@drawable/ic_action_image_dehaze" />
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:background="@color/s_orange"
+    android:orientation="vertical">
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"/>
+
+    <com.intrix.social.common.view.STextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:text="You are 7th in the wait list"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"/>
+
+    <com.intrix.social.common.view.SBtnView
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:background="@drawable/btn_white_stroke"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="@string/cancel"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="16sp"/>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"/>
+
+</LinearLayout>
